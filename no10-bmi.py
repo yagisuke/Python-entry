@@ -10,9 +10,9 @@ result = ""
 
 if bmi < 18.5:
     result = "痩せとるなぁ"
-if (18.5 <= bmi) and (bmi < 25):
+if 18.5 <= bmi < 25: # (18.5 <= bmi) and (bmi < 25)
     result = "ふつぅ"
-if (25 <= bmi) and (bmi < 30):
+if 25 <= bmi < 30: # (25 <= bmi) and (bmi < 30)
     result = "ぽちゃってきてるで"
 if bmi >= 30:
     result = "太りすぎです"
