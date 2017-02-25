@@ -3,3 +3,4 @@ print(type("ABCD")) #<class 'str'>
 print(type(100)) # <class 'int'>
 print(type(3.14)) # <class 'float'>
 print(type(True)) # <class 'bool'>
+print(type(["Banana", "Apple"])) # <class 'list'>
