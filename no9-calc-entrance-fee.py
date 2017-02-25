@@ -1,3 +1,5 @@
+# 遊園地の入場料の計算プログラム
+
 # 料金
 CHILDREN_PRICE = 1000
 NORMAL_PRICE = 3000
