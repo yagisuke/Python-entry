@@ -66,3 +66,17 @@ def print_args(**args):
 
 print_args(a = 30, b = 50, c = 40) # {'a': 30, 'b': 50, 'c': 40}
 print_args(aa = "hoge", bb = "huga") # {'aa': 'hoge', 'bb': 'huga'}
+
+
+# 関数の引数に関数を指定する
+def mul_func(a, b): return a * b
+def add_func(a, b): return a + b
+
+def calc_5_3(func):
+    return func(5, 3)
+
+result = calc_5_3(mul_func)
+print(result) # 15
+
+result = calc_5_3(add_func)
+print(result) # 8
