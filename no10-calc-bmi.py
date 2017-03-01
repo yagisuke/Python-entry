@@ -1,9 +1,18 @@
 # BMI判定プログラム
 # BMI = 体重(kg) / ( 身長(m) x 身長(m) )
-weight_kg = float(input("体重何キロあるん？"))
-height_cm = float(input("身長は何センチあるん？"))
-height_m = height_cm / 100
-bmi = weight_kg / (height_m * height_m)
+while True:
+    try:
+        weight_kg = float(input("体重何キロあるん？"))
+        height_cm = float(input("身長は何センチあるん？"))
+        height_m = height_cm / 100
+        bmi = weight_kg / (height_m * height_m)
+        break;
+    except ValueError as e:
+        print(e, "入力ミスがあります。再度入力してください。")
+    except ZeroDivisionError as e:
+        print(e, "入力ミスがあります。再度入力してください。")
+    except:
+        print("入力ミスがあります。再度入力してください。")
 
 # 結果はどうなるか？
 result = ""
