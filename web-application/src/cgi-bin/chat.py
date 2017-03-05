@@ -18,8 +18,11 @@ def print_html(body):
     print("")
     # HTMLを出力する
     print("""
-        <html><head><meta charset='utf-8'>
-        <title>チャット</title>
+        <html>
+        <head>
+            <meta charset='utf-8'>
+            <title>チャット</title>
+        </head>
         <body>
             <h1>チャット</h1>
             <div>
