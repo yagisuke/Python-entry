@@ -9,7 +9,7 @@ import html
 cgitb.enable()
 
 # 全体の設定
-FILE_LOG = "log/chat-log.txt"
+FILE_LOG = "log/no59-chat-log.txt"
 
 # HTMLを画面に出力する
 def print_html(body):
@@ -73,7 +73,7 @@ def mode_write(form):
     with open(FILE_LOG, "a+", encoding='utf-8') as f:
         f.write("<p>{0}: {1}</p><hr>\n".format(name, body))
     # 書き込み後にリダイレクトする
-    jump('chat.py')
+    jump('no59-chat.py')
 
 # メイン処理
 def main():
