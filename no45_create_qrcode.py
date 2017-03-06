@@ -8,4 +8,4 @@ import qrcode;
 # QRコードを生成する
 img = qrcode.make("https://github.com/yagisuke")
 # QRコードをファイルに保存
-img.save("output/no45_qr-yagisuke.png")
+img.save("output/no45_qr_yagisuke.png")

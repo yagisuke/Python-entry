@@ -1,6 +1,6 @@
 # テキストファイルの読み書き
 
-FILENAME = "output/no_47.txt"
+FILENAME = "output/no47.txt"
 UTF8 = "utf-8"
 
 # ファイルの書き込み

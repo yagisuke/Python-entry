@@ -9,7 +9,7 @@ import html
 cgitb.enable()
 
 # 全体の設定
-FILE_LOG = "log/no59-chat-log.txt"
+FILE_LOG = "log/no59_chat_log.txt"
 
 # HTMLを画面に出力する
 def print_html(body):
