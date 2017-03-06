@@ -31,13 +31,13 @@ print("\r\nーーーー")
 
 
 # 素数を返却するiterator
-def genPrime(max_num=15):
+def genPrime(max_num = 15):
     num = 2
     while (num <= max_num):
         is_prime = True
         for i in range(2, num):
             if (num % i) == 0:
-                is_prime =False
+                is_prime = False
                 break
         if (is_prime):
             yield num
