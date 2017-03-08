@@ -1,10 +1,9 @@
 import unittest
 import no76_tsurukame as tsurukame
 
-
+# $ python3 -m unittest no77_unit_test.py
 class TestTsurukame(unittest.TestCase):
 
-    # $ python3 -m unittest no77_unit_test.py
     def test_tsurukame(self):
         # 鶴亀算を計算
         tsuru, kame = tsurukame.calc_tsurukame(
