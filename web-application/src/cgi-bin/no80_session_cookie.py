@@ -69,15 +69,15 @@ class CookieSession:
             f.write(a_json)
 
     # 添字アクエスのための特殊メソッドの定義
+    def __contains__(self, key):
+        return key in self.values
+
     def __getitem__(self, key):
         return self.values[key]
 
     def __setitem__(self, key, value):
         self.modified = True
         self.values[key] = value
-
-    def __contains__(self, key):
-        return key in self.values
 
     def clear(self):
         self.values = {}
