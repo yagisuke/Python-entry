@@ -9,9 +9,6 @@ import random
 import hashlib
 import cgitb
 
-# ブラウザでのデバッグを有効にする
-cgitb.enable()
-
 class CookieSession:
     '''クッキーを使ったセッション管理'''
 
@@ -83,6 +80,7 @@ class CookieSession:
         self.values = {}
 
 if __name__ == "__main__":
+    cgitb.enable()
     # 実行テスト(訪問カウンターの例)
     ck = CookieSession()
     counter = 1

@@ -5,9 +5,6 @@ import cgitb
 import os.path
 import html
 
-# ブラウザでのデバッグを有効にする
-cgitb.enable()
-
 # 全体の設定
 FILE_LOG = "log/no59_chat_log.txt"
 
@@ -87,4 +84,5 @@ def main():
     else: mode_read(form)
 
 if __name__ == "__main__":
+    cgitb.enable()
     main()
